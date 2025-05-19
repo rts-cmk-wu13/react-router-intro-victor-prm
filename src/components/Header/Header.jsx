@@ -1,6 +1,6 @@
 import './Header.sass'
-import profileImg from '../assets/imgs/whitney.svg'
-import menuIcon from '../assets/icons/menu.svg'
+import profileImg from '../../assets/imgs/whitney.svg'
+import menuIcon from '../../assets/icons/menu.svg'
 import { Link } from 'react-router'
 
 export default function Header() {

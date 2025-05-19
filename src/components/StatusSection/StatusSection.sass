@@ -1,0 +1,26 @@
+@use '../../style/base'
+
+.status-section
+
+    .scooter-lock
+        @extend %fxrow
+        justify-content: space-between
+        align-items: center
+        background: base.$color-accent
+
+        padding: base.$unit-3x
+        border-radius: base.$unit-4x
+
+        color: white
+
+        &__button
+            width: base.$unit-8x
+            height: base.$unit-8x
+            border-radius: base.$unit-8x
+            border: 3px solid base.$color-accent-dark
+            background: transparent
+        
+        &__icon
+            filter: base.$svg-white
+             width: base.$unit-3x
+            height: base.$unit-3x

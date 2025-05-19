@@ -1,7 +1,7 @@
 import './UpdateMessage.sass'
-import closeIcon from '../assets/icons/x.svg'
-import scooter from '../assets/imgs/scooter.svg'
-import messageContainer from '../assets/imgs/message-container.svg'
+import closeIcon from '../../assets/icons/x.svg'
+import scooter from '../../assets/imgs/scooter.svg'
+import messageContainer from '../../assets/imgs/message-container.svg'
 
 export default function UpdateMessage() {
     return (
