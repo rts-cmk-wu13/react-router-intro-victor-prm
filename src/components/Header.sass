@@ -1,0 +1,27 @@
+@use '../style/base'
+
+.header
+    @extend %fxrow
+    align-items: center
+    justify-content: space-between
+
+    .avatar
+        @extend %fxrow
+        align-items: center
+        gap: base.$unit-2x
+
+        &__wrapper
+            @extend %fxrow
+            align-items: end
+            justify-content: center
+
+            background: base.$color-accent
+            width: base.$unit-6x
+            height: base.$unit-6x
+            border-radius: base.$unit-8x
+
+        &__username
+            font-size: 1rem
+
+        &__welcome-msg
+            font-size: 0.75rem

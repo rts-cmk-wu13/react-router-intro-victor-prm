@@ -1,6 +1,13 @@
 @use 'sass:math'
 @use 'sass:color'
 
+/* Fonts */
+@font-face
+    font-family: "Mulish"
+    src: url(../assets/fonts/Mulish/Mulish-VariableFont_wght.ttf) format("truetype")
+
+$sans-serif-family: Mulish, Helvetica, Arial, sans-serif
+
 /* Gray base */
 $gray-500: #7f7f7f
 /* Gray lighter */
@@ -32,13 +39,16 @@ $color-primary-900: color.scale($color-primary-500,$lightness: -80%)
 $color-primary-950: color.scale($color-primary-500,$lightness: -90%)
 
 $color-alert: #FF5D5D
-$color-accent: #FDD201
+
+$color-accent: #FFA500
+$color-accent-light: color.scale($color-accent,$lightness: 60%)
+$color-accent-dark: color.scale($color-accent,$lightness: -60%)
 
 $black-tint-100: rgba($gray-900, .2)
 $box-shadow-6r: 0 0 6rem $black-tint-100
 
-$max-width-content: 70rem
-$max-width-page: 80rem
+$max-width-content: 35rem
+$max-width-page: 40rem
 $tablet-breakpoint: 40rem
 $unit-1x: 0.5rem
 $unit-2x: $unit-1x*2
@@ -56,10 +66,6 @@ $svg-white: invert(100%) sepia(91%) saturate(38%) hue-rotate(321deg) brightness(
 $text-headline: 1.5rem/2rem Roboto_Reg, Arial, Helvetica, sans-serif
 $grid-item-size: 8rem
 
-@font-face
-    font-family: Mulish
-    src: url(/fonts/Mulish/Mulish-Variable.ttf)
-
 *,
 *::before,
 *::after
@@ -73,7 +79,7 @@ $grid-item-size: 8rem
     scrollbar-width: none
 
 body
-    font-family: Helvetica, Arial, sans-serif
+    font-family: $sans-serif-family
 
     max-width: $max-width-page
     margin: 0 auto
