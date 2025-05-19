@@ -1,6 +1,13 @@
 @use 'sass:math'
 @use 'sass:color'
 
+/* Fonts */
+@font-face
+    font-family: "Mulish"
+    src: url(../../assets/fonts/Mulish/Mulish-VariableFont_wght.ttf) format("truetype")
+
+$sans-serif-family: Mulish, Helvetica, Arial, sans-serif
+
 /* Gray base */
 $gray-500: #7f7f7f
 /* Gray lighter */
@@ -17,7 +24,7 @@ $gray-900: color.scale($gray-500,$lightness: -80%)
 $gray-950: color.scale($gray-500,$lightness: -90%)
 
 /* Primary base */
-$color-primary-500: #4D861F
+$color-primary-500: #55418E
 /* Primary lighter */
 $color-primary-050: color.scale($color-primary-500,$lightness: 90%)
 $color-primary-100: color.scale($color-primary-500,$lightness: 80%)
@@ -32,13 +39,16 @@ $color-primary-900: color.scale($color-primary-500,$lightness: -80%)
 $color-primary-950: color.scale($color-primary-500,$lightness: -90%)
 
 $color-alert: #FF5D5D
-$color-accent: #FDD201
+
+$color-accent: #FFA500
+$color-accent-light: color.scale($color-accent,$lightness: 20%)
+$color-accent-dark: color.scale($color-accent,$lightness: -20%)
 
 $black-tint-100: rgba($gray-900, .2)
 $box-shadow-6r: 0 0 6rem $black-tint-100
 
-$max-width-content: 70rem
-$max-width-page: 80rem
+$max-width-content: 35rem
+$max-width-page: 40rem
 $tablet-breakpoint: 40rem
 $unit-1x: 0.5rem
 $unit-2x: $unit-1x*2
@@ -51,14 +61,12 @@ $unit-8x: $unit-1x*8
 $unit-05x: math.div($unit-1x,2)
 $unit-025x: math.div($unit-1x,4)
 
+$svg-primary: invert(24%) sepia(15%) saturate(4208%) hue-rotate(225deg) brightness(100%) contrast(83%)
+$svg-accent: invert(81%) sepia(52%) saturate(5083%) hue-rotate(358deg) brightness(102%) contrast(105%)
 $svg-white: invert(100%) sepia(91%) saturate(38%) hue-rotate(321deg) brightness(110%) contrast(110%)
 
 $text-headline: 1.5rem/2rem Roboto_Reg, Arial, Helvetica, sans-serif
 $grid-item-size: 8rem
-
-@font-face
-    font-family: Mulish
-    src: url(/fonts/Mulish/Mulish-Variable.ttf)
 
 *,
 *::before,
@@ -72,11 +80,16 @@ $grid-item-size: 8rem
     -webkit-scrollbar: none
     scrollbar-width: none
 
+#root
+    @extend %fxcol
+    gap: $unit-4x
+
 body
-    font-family: Helvetica, Arial, sans-serif
+    font-family: $sans-serif-family
 
     max-width: $max-width-page
     margin: 0 auto
+    padding: $unit-2x
 
 a, button
     cursor: pointer
