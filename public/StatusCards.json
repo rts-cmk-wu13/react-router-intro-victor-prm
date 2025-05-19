@@ -1,0 +1,24 @@
+{
+    "cards": [
+        {
+            "title": "Total Distance",
+            "icon": "map",
+            "text": "17.8 km"
+        },
+        {
+            "title": "Total Battery",
+            "icon": "battery-charging",
+            "text": "98%"
+        },
+        {
+            "title": "Average speed",
+            "icon": "zap",
+            "text": "18 km/h"
+        },
+        {
+            "title": "Ride updated",
+            "icon": "upload",
+            "text": "1 day ago"
+        }
+    ]
+}

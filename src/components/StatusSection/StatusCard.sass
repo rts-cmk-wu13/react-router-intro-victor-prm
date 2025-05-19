@@ -1,0 +1,22 @@
+@use '../../style/base'
+
+.status-card
+    @extend %fxcol
+    justify-content: space-between
+    border: 1px solid base.$gray-100
+    border-radius: base.$unit-4x
+    padding: base.$unit-3x base.$unit-2x
+    gap: base.$unit-2x
+
+    &__title
+        font-size: 0.875rem
+        color: base.$color-primary-500
+
+    &__icon
+        width: base.$unit-3x
+        height: base.$unit-3x
+        opacity: 0.33
+
+    &__text
+        font-size: 0.875rem
+        color: base.$color-accent
