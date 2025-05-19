@@ -1,27 +1,55 @@
 @use '../style/base'
 
-.header
-    @extend %fxrow
-    align-items: center
-    justify-content: space-between
+.update-message
+    display: grid
+    color: white
 
-    .avatar
+    &>*
+        grid-area: 1/1
+
+    &__background
+        filter: base.$svg-primary
+        width: 100%
+        position: relative
+        z-index: -1
+        min-width: 20rem
+
+    &__content
+        @extend %fxcol
+        max-width: 58%
+        margin: 15%
+        gap: base.$unit-1x
+
+
+    &__heading
+        font-size: 1rem
+
+    &__text
+        font-size: 0.825rem
+
+    &__close-button
         @extend %fxrow
         align-items: center
-        gap: base.$unit-2x
+        justify-content: center
 
-        &__wrapper
-            @extend %fxrow
-            align-items: end
-            justify-content: center
+        width: base.$unit-3x
+        height: base.$unit-3x
 
-            background: base.$color-accent
-            width: base.$unit-6x
-            height: base.$unit-6x
-            border-radius: base.$unit-8x
+        border-radius: base.$unit-8x
 
-        &__username
-            font-size: 1rem
+        justify-self: end
+        margin: base.$unit-2x
 
-        &__welcome-msg
-            font-size: 0.75rem
+        background: white
+        border: none
+
+    &__close-icon
+        width: base.$unit-2x
+        height: base.$unit-2x
+        filter: base.$svg-accent
+
+    &__illustration
+        place-self: end
+        margin: base.$unit-2x
+        height: 75%
+
