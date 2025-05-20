@@ -6,12 +6,15 @@
 
     &>*
         grid-area: 1/1
+        position: relative
+
+        &::not(".update-message__background")
+            z-index: 1
 
     &__background
         filter: base.$svg-primary
         width: 100%
         position: relative
-        z-index: -1
         min-width: 20rem
 
     &__content
@@ -19,7 +22,6 @@
         max-width: 58%
         margin: 15%
         gap: base.$unit-1x
-
 
     &__heading
         font-size: 1rem
@@ -50,6 +52,5 @@
 
     &__illustration
         place-self: end
-        margin: base.$unit-2x
+        margin: base.$unit-3x
         height: 75%
-

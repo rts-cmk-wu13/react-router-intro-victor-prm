@@ -28,7 +28,23 @@
             font-size: 0.75rem
             color: base.$color-primary-300
 
+    &__settings-link
+        @extend %fxrow
+        width: base.$unit-4x
+        justify-content: right
+
     &__settings-icon
         height: base.$unit-2x
         width: base.$unit-2x
         filter: base.$svg-primary
+
+    &--settings
+        .avatar
+            &__username
+                color: white
+
+            &__welcome-msg
+                color: white
+
+        .header__settings-icon
+            filter: base.$svg-white
