@@ -1,0 +1,32 @@
+{
+    "settingsItems": [
+        {
+            "title": "Home",
+            "href": "/settings"
+        },
+        {
+            "title": "Profile",
+            "href": "/404"
+        },
+        {
+            "title": "Travel History",
+            "href": "/404"
+        },
+        {
+            "title": "Scooter Settings",
+            "href": "/404"
+        },
+        {
+            "title": "Help",
+            "href": "/404"
+        },
+        {
+            "title": "Privacy Policy",
+            "href": "/404"
+        },
+        {
+            "title": "Terms & Conditions",
+            "href": "/404"
+        }
+    ]
+}
