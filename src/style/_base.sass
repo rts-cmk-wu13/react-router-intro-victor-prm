@@ -48,7 +48,7 @@ $black-tint-100: rgba($gray-900, .2)
 $box-shadow-6r: 0 0 6rem $black-tint-100
 
 $max-width-content: 35rem
-$max-width-page: 40rem
+$max-width-page: 72rem
 $tablet-breakpoint: 40rem
 $unit-1x: 0.5rem
 $unit-2x: $unit-1x*2
@@ -80,16 +80,11 @@ $grid-item-size: 8rem
     -webkit-scrollbar: none
     scrollbar-width: none
 
-#root
-    @extend %fxcol
-    gap: $unit-4x
-
 body
     font-family: $sans-serif-family
 
     max-width: $max-width-page
     margin: 0 auto
-    padding: $unit-2x
 
 a, button
     cursor: pointer
